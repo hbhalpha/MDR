@@ -12,3 +12,5 @@ the pipeline is :
 3. merge the experts' voting results and  the visual keypoints results to get
 The five experts and the dino as a whole can be viewed as a unified model. They are useful for both tasks and do not need to be trained specifically for the task. 
 You can download Several dataset by M2KR-train-dataset.
+
+You can run a single Expert as a simple version of our system by run run2.sh
