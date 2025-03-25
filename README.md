@@ -2,7 +2,7 @@
 
 Using-GPU：A100-40G*8
 
-we are trying our best to upload the huge scale of our training data, However, this data still faces censorship and network congestion, and we are doing our best to upload it. 
+Used Training data: Link：https://pan.baidu.com/s/1tF8CSWhVbwevfAPaipvRYQ?pwd=7nui  password：7nui 
 
 Run run.sh to run our step-by step code, You shoule replace the data path to  your own path. 
 you can download GME-7B model and dino-v2 as backbone.
