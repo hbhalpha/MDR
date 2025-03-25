@@ -104,16 +104,16 @@ python ./zhengliu/train.py \
   --learning_rate 1e-5 \
   --gradient_accumulation_steps 8 \
   --num_train_epochs 2
-python ./gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp1" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt1.json"
-python ./gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp2" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt2.json"
-python ./gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp3" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt3.json"
-python ./gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp4" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt4.json"
-python ./gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp5" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt5.json"
-python script.py --gme_path "$GME_PATH" --peft_model_path "gme_exp1" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt1.json"
-python script.py --gme_path "$GME_PATH" --peft_model_path "gme_exp2" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt2.json"
-python script.py --gme_path "$GME_PATH" --peft_model_path "gme_exp3" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt3.json"
-python script.py --gme_path "$GME_PATH" --peft_model_path "gme_exp4" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt4.json"
-python script.py --gme_path "$GME_PATH" --peft_model_path "gme_exp5" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt5.json"
+python ./test2/gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp1" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt1.json"
+python ./test2/gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp2" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt2.json"
+python ./test2/gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp3" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt3.json"
+python ./test2/gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp4" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt4.json"
+python ./test2/gme_m2krlora.py  --gme_path "$GME_PATH" --peft_model_path "gme_exp5" --dataset_path "$M2KR_DATA_PATH" --query_path "$M2KR_QUERY" --passage_path "$M2KR_PASSAGES_PATH" --save_dir "to/your_path/m2kr_reuslt5.json"
+python ./test2/gme_doc_test.py --gme_path "$GME_PATH" --peft_model_path "gme_exp1" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt1.json"
+python ./test2/gme_doc_test.py --gme_path "$GME_PATH" --peft_model_path "gme_exp2" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt2.json"
+python ./test2/gme_doc_test.py --gme_path "$GME_PATH" --peft_model_path "gme_exp3" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt3.json"
+python ./test2/gme_doc_test.py --gme_path "$GME_PATH" --peft_model_path "gme_exp4" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt4.json"
+python ./test2/gme_doc_test.py --gme_path "$GME_PATH" --peft_model_path "gme_exp5" --data_path "$DOC_DATA_PATH" --passages_file "$DOC_PASSAGE" --queries_file "$DOC_QUERY" --save_dir "to/your_path/doc_reuslt5.json"
 
 
 python merge_rank.py \
